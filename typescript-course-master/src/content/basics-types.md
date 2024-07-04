@@ -19,6 +19,8 @@ score = "10";
 - Chỉ sử dụng typeof trực tiếp vào biến hoặc param, chứ không sử dụng vào Type được
 - Type `null` chỉ sử dụng được cho giá trị null
 - Type `undefined` chỉ sử dụng được cho giá trị undefined
+- Type `never` cho function sẽ không bao giờ trả về giá trị, bởi vì nó luôn sẽ throw error hoặc sẽ không bao giờ xử lý xong (vòng lặp vô tận)
+- Type `void` thì không có giá trị trả về
 - `{}` là 1 type đặc biệt trong Typescript, nó có tất cả giá trị ngoại trừ `null` và `undefined` và không nên dùng khi khai báo cho các giá trị
 - Khi làm việc với object thì nên khai báo rõ ràng hoặc dùng `Record<string, any>`
 
